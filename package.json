@@ -1,23 +1,49 @@
 {
-  "name": "semantic-release-repo-template",
-  "module": "index.ts",
-  "type": "module",
-  "devDependencies": {
-    "@codedependant/semantic-release-docker": "^5.0.0",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/commit-analyzer": "^13.0.0",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^11.0.0",
-    "@semantic-release/npm": "^12.0.0",
-    "@semantic-release/release-notes-generator": "^14.0.0",
-    "bun-types": "latest",
-    "xo": "^0.60.0"
+  "name": "jira-branches",
+  "displayName": "Jira Branches",
+  "description": "Instead of manually switching or creating Git branches, you simply choose the desired Jira issue.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "jira-branches.helloWorld",
+        "title": "Hello World"
+      }
+    ]
   },
-  "version": "1.7.0",
   "scripts": {
-    "test": "xo"
+    "vscode:prepublish": "yarn run package",
+    "compile": "yarn run check-types && yarn run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "yarn run check-types && yarn run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "esbuild": "^0.24.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.7.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
   }
 }
