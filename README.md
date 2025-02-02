@@ -5,7 +5,10 @@
 [![CodeQL](../../actions/workflows/codeql.yml/badge.svg)](../../actions/workflows/codeql.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/tomerh2001/vscode-jira-branches/badge)](https://securityscorecards.dev/viewer/?uri=github.com/tomerh2001/vscode-jira-branches)
 
-VS Code Jira Branch Switcher is an extension that integrates your Jira workflow with Git branch management in VS Code. With this extension, you can select a Jira issue from a list, and the extension will automatically switch to a corresponding Git branch or create one if it doesn't exist. This abstraction allows you to focus on your tasks without worrying about branch naming conventions and manual branch switching.
+VS Code Jira Branch Switcher is an extension that integrates your Jira workflow with Git branch management in VS Code.
+
+With this extension, you can select a Jira issue from a list, and the extension will automatically switch to a corresponding Git branch or create one if it doesn't exist.
+This abstraction allows you to focus on your tasks without worrying about branch naming conventions and manual branch switching.
 
 ## Features
 
