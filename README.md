@@ -23,11 +23,3 @@ This abstraction allows you to focus on your tasks without worrying about branch
 
 - **Extensible:**  
   Easily integrate with your Jira API to fetch real-time issues and customize branch naming conventions.
-
-## Installation
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/yourusername/vscode-jira-branch-switcher.git
-   cd vscode-jira-branch-switcher
