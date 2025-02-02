@@ -1,3 +1,10 @@
+# 1.0.0 (2025-02-02)
+
+
+### Features
+
+* first commit ([6cf9369](https://github.com/tomerh2001/vscode-jira-branches/commit/6cf936906ee48bf5413f20dcf3e5787d7a442c64))
+
 # [1.7.0](https://github.com/tomerh2001/semantic-release-repo-template/compare/v1.6.1...v1.7.0) (2023-10-01)
 
 
