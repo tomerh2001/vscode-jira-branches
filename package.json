@@ -14,10 +14,25 @@
   "contributes": {
     "commands": [
       {
-        "command": "jira-branches.helloWorld",
-        "title": "Hello World"
+        "command": "jira-branches.setup",
+        "title": "Jira Branches: Setup Jira"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Jira Branches",
+      "properties": {
+        "jira-branches.jiraUrl": {
+          "type": "string",
+          "default": "https://jira.atlassian.com/",
+          "description": "The Jira instance URL."
+        },
+        "jira-branches.jiraToken": {
+          "type": "string",
+          "default": "",
+          "description": "The API token for Jira authentication."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",
