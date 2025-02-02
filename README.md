@@ -17,3 +17,29 @@
 | SNYK_TOKEN                | Snyk Token for security tests    | Recommended |
 | DOCKER_REGISTRY_USER      | Docker registry user             | Optional    |
 | DOCKER_REGISTRY_PASSWORD  | Docker registry password         | Optional
+
+# VS Code Jira Branch Switcher
+
+VS Code Jira Branch Switcher is an extension that integrates your Jira workflow with Git branch management in VS Code. With this extension, you can select a Jira issue from a list, and the extension will automatically switch to a corresponding Git branch or create one if it doesn't exist. This abstraction allows you to focus on your tasks without worrying about branch naming conventions and manual branch switching.
+
+## Features
+
+- **Quick Jira Issue Selection:**  
+  Use the Command Palette or click the status bar item to open a Quick Pick dialog with available Jira issues.
+
+- **Seamless Git Integration:**  
+  Automatically checks out an existing branch or creates a new branch based on the selected Jira issue.
+
+- **Status Bar Display:**  
+  The current Jira issue (extracted from the branch name) is displayed in the status bar for quick reference.
+
+- **Extensible:**  
+  Easily integrate with your Jira API to fetch real-time issues and customize branch naming conventions.
+
+## Installation
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/vscode-jira-branch-switcher.git
+   cd vscode-jira-branch-switcher
