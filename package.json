@@ -55,7 +55,7 @@
     "@types/xo": "^0.39.9",
     "@typescript-eslint/eslint-plugin": "^8.22.0",
     "@typescript-eslint/parser": "^8.22.0",
-    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-cli": "^0.0.15",
     "@vscode/test-electron": "^2.4.1",
     "esbuild": "^0.24.2",
     "eslint": "^9.19.0",
